@@ -15,17 +15,15 @@
 #include <iostream>
 
 
-template <typename T  >
-void iter(T *arr , int arr_size ,  T (*func)(T))
+template <typename T >
+void iter(T* arr , int arr_size ,  	void (*func)(T))
 {
 	int  i = 0;
 	while(i < arr_size)
 	{
 		func(arr[i]);
-		std::cout << "saldnasl" << std::endl;
 		i++;
 	}
 }
-
 
 #endif
